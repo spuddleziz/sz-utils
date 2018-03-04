@@ -1,0 +1,32 @@
+import { Types } from "./Types";
+export declare abstract class Schema<T> {
+    _type: Array<Types> | Types;
+    title: string;
+    description: string;
+    example: T;
+    examples: Array<T>;
+    default: any;
+    _requiredFlag: boolean;
+    _forbiddenFlag: boolean;
+    _stripFlag: boolean;
+    _validValues: Array<T>;
+    _children: Array<Schema<any>>;
+    _notAllowed: boolean;
+    constructor(typeOrTypes?: Array<Types> | Types);
+    setTitle(title: string): void;
+    setDescription(description: string): void;
+    setExamples(example: T): any;
+    setExamples(examples: Array<T>): any;
+    setExamples(example: T, clearExisting?: boolean): any;
+    setExamples(examples: Array<T>, clearExisting?: boolean): any;
+    setDefault(defaultVar: any): void;
+    setValids(validVaues: Array<any>): void;
+    addChild(childSchemaToAdd: Schema<any>): void;
+    setRequired(isRequired?: boolean): void;
+    setForbidden(isForbidden?: boolean): void;
+    setStrip(isStripped?: boolean): void;
+    static toJSON(schemaObj: Schema<any>, inSchema?: object): any;
+    toJSON(): any;
+    compile(): void;
+    validate(value: any): boolean;
+}

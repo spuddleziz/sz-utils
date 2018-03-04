@@ -1,0 +1,1 @@
+{"version":3,"file":"Any.js","sourceRoot":"","sources":["../../../src/SZValidator/JSONSchema/Any.ts"],"names":[],"mappings":";;AAAA,qCAAgC;AAChC,mCAA8B;AAG9B,WAAmB,SAAQ,eAAW;IAEpC;QAEE,KAAK,CAAC;YACJ,aAAK,CAAC,KAAK;YACX,aAAK,CAAC,OAAO;YACb,aAAK,CAAC,MAAM;YACZ,aAAK,CAAC,MAAM;YACZ,aAAK,CAAC,MAAM;YACZ,aAAK,CAAC,IAAI;SACX,CAAC,CAAC;IAEL,CAAC;CAEF;AAfD,sBAeC"}

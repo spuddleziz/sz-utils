@@ -1,0 +1,30 @@
+/// <reference types="bluebird" />
+import * as SZPromise from "./SZPromise";
+import * as SZValidator from "./SZValidator";
+import * as ImportBluebird from "bluebird";
+export declare const Promise: {
+    resolve: typeof ImportBluebird.resolve;
+    reject: typeof ImportBluebird.reject;
+    defer: typeof ImportBluebird.defer;
+    all: typeof ImportBluebird.all;
+    each: typeof ImportBluebird.each;
+    join: typeof ImportBluebird.join;
+    try: typeof ImportBluebird.try;
+    method: typeof ImportBluebird.method;
+    props: typeof ImportBluebird.props;
+    any: typeof ImportBluebird.any;
+    some: typeof ImportBluebird.some;
+    map: typeof ImportBluebird.map;
+    reduce: typeof ImportBluebird.reduce;
+    filter: typeof ImportBluebird.filter;
+    mapSeries: typeof ImportBluebird.mapSeries;
+    race: typeof ImportBluebird.race;
+    using: typeof ImportBluebird.using;
+    promisify: typeof ImportBluebird.promisify;
+    promisifyAll: typeof ImportBluebird.promisifyAll;
+    fromCallback: typeof ImportBluebird.fromCallback;
+    begin: <R>(inData?: any) => SZPromise.ISZCPPromise<R>;
+    create: <R>(callback: (resolve: (thenableOrResult?: R | PromiseLike<R>) => void, reject: (error?: any) => void, onCancel?: (callback: () => void) => void) => void) => SZPromise.ISZCPPromise<R>;
+};
+export declare const Bluebird: typeof ImportBluebird;
+export declare const Validator: typeof SZValidator;
